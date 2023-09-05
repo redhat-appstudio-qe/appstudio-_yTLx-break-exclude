@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-hipx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/release-e2e-deploy-tenant/appstudio/dc-metro-map-hipx@sha256:b706ae96309401c1002bf6b5ae1b453cb9a12327d5fbfcc4b09e4416d73b7b0f
+        name: my-nodejs
+        resources: {}
+status: {}
